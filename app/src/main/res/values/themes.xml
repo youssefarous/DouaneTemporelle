@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--
+        ملف السمات والمظهر العام (Theme) لتطبيق الجمارك الزمنية
+    -->
+    <style name="Theme.DouaneTemporelle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- الألوان الأساسية لشريط الحالة والتحكم -->
+        <item name="colorPrimary">@color/primary_time_blue</item>
+        <item name="colorPrimaryVariant">@color/primary_time_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent_cyan</item>
+        <item name="colorSecondaryVariant">@color/secondary_teal</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- إعداد شريط الحالة باللون الداكن المناسب للخيال العلمي -->
+        <item name="android:statusBarColor">@color/primary_time_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

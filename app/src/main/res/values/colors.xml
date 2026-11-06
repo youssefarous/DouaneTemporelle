@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ملف الألوان (Colors) الخاص بتطبيق الجمارك الزمنية
+    يحدد ألوان واجهات الاستمارة وتذكرة الجوازات وشاشات النتيجة (الموافقة / الاعتقال)
+-->
+<resources>
+    <!-- 1. الألوان الأساسية للنظام والسمة (Theme Colors) -->
+    <color name="primary_time_blue">#1A237E</color>
+    <color name="primary_time_dark">#0D133D</color>
+    <color name="accent_cyan">#00E5FF</color>
+    <color name="secondary_teal">#00897B</color>
+
+    <!-- 2. ألوان الشاشة الثالثة (النتيجة / Verdict) -->
+    <!-- اللون الأخضر لحالة الموافقة على السفر (Approuvé) -->
+    <color name="verdict_approved_bg">#2E7D32</color>
+    <color name="verdict_approved_card">#1B5E20</color>
+
+    <!-- اللون الأحمر لحالة الرفض والاعتقال الزمني (Refusé / Arrestation) -->
+    <color name="verdict_refused_bg">#C62828</color>
+    <color name="verdict_refused_card">#8E0000</color>
+
+    <!-- 3. ألوان التذكرة / الباسبور الزمني (Ticket & Passport) -->
+    <color name="ticket_background">#FFFFFF</color>
+    <color name="ticket_border">#B0BEC5</color>
+    <color name="ticket_header">#0F172A</color>
+    <color name="ticket_text_main">#1E293B</color>
+    <color name="ticket_text_muted">#64748B</color>
+    <color name="paradox_warning_bg">#FFF3E0</color>
+    <color name="paradox_warning_text">#E65100</color>
+
+    <!-- 4. ألوان الأزرار والحالات المختلفة -->
+    <color name="btn_inspecter_normal">#0284C7</color>
+    <color name="btn_disabled">#9E9E9E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

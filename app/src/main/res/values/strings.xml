@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ملف النصوص والسلاسل النصية (Strings) لتطبيق الجمارك الزمنية
+    يحتوي على جميع النصوص المترجمة والرسائل والتنبيهات
+-->
+<resources>
+    <!-- 1. اسم التطبيق والعناوين الرئيسية -->
+    <string name="app_name">Douane Temporelle</string>
+    <string name="title_main_activity">⚡ Poste de Douane Temporelle</string>
+    <string name="subtitle_main_activity">Contrôle des flux spatio-temporels</string>
+    <string name="title_verification_activity">🛂 Scanner de Paradoxe Temporel</string>
+    <string name="title_result_activity">⚖️ Verdict de la Douane</string>
+
+    <!-- 2. حقول الإدخال في النشاط الأول (Formulaire d'enregistrement) -->
+    <string name="label_nom_voyageur">Nom complet du voyageur :</string>
+    <string name="hint_nom_voyageur">Ex: John Titor / Marty McFly</string>
+    
+    <string name="label_annee_naissance">Année de naissance :</string>
+    <string name="hint_annee_naissance">Ex: 1990</string>
+    
+    <string name="label_annee_destination">Année de destination :</string>
+    <string name="hint_annee_destination">Ex: 2050 (ou 1885)</string>
+    
+    <string name="label_motif_voyage">Motif du saut temporel :</string>
+    <string name="btn_inspecter_profil">🔍 Inspecter le profil</string>
+
+    <!-- 3. نصوص واجهة التحقق (VerificationActivity - Passport/Ticket) -->
+    <string name="passport_header">PASSEPORT TEMPOREL UNIVERSEL</string>
+    <string name="passport_nom_prefix">Voyageur : </string>
+    <string name="passport_age_prefix">Âge temporel calculé : </string>
+    <string name="passport_motif_prefix">Motif déclaré : </string>
+    <string name="passport_diff_prefix">Différence temporelle : </string>
+    <string name="btn_approuver_saut">✅ Approuver le saut temporel</string>
+    <string name="btn_refuser_saut">⛔ Refuser (Risque de paradoxe)</string>
+    <string name="alert_paradox_detected">⚠️ ALERTE PARADOXE : La modification du passé avec un écart temporel premier est formellement interdite ! Bouton \'Approuver\' verrouillé.</string>
+
+    <!-- 4. نصوص واجهة النتيجة (ResultActivity) -->
+    <string name="msg_bon_voyage">Bon voyage %1$s ! Que la ligne temporelle vous soit favorable.</string>
+    <string name="msg_arrestation">%1$s est en état d\'arrestation temporelle immédiate !</string>
+    <string name="verdict_status_approved">AUTORISATION ACCORDÉE</string>
+    <string name="verdict_status_refused">REFUS D\'ACCÈS - DANGER PARADOXE</string>
+    <string name="btn_nouveau_voyageur">🔄 Nouveau voyageur</string>
+
+    <!-- 5. رسائل الخطأ والتنبيهات -->
+    <string name="error_champs_vides">Veuillez remplir tous les champs obligatoires !</string>
+    <string name="error_annee_invalide">Année invalide (doit être comprise entre 1 et 9999) !</string>
+    <string name="desc_photo_voyageur">Photo d\'identité temporelle du voyageur</string>
+</resources>

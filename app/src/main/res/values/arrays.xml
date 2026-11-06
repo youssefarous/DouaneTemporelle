@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ملف المصفوفات (Arrays)
+    يحتوي على خيارات قائمة الدوافع للسفر عبر الزمن (Motifs de voyage)
+-->
+<resources>
+    <string-array name="motifs_voyage_array">
+        <item>Tourisme</item>
+        <item>Modification du passé</item>
+        <item>Fuite</item>
+    </string-array>
+</resources>
