@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    النشاط 1 : استمارة تسجيل المسافر الزمني (MainActivity)
+    تتضمن:
+    1. اسم المسافر (EditText)
+    2. سنة الولادة (EditText - أرقام)
+    3. سنة الوجهة (EditText - أرقام)
+    4. دافع السفر (Spinner قائمة منسدلة)
+    5. زر فحص الملف الشخصي (Button) للانتقال إلى النشاط 2
+    
+    ملاحظة هامة للمشروع:
+    معرفات العناصر (IDs) تنتهي جميعها بالحروف الأولى للطالب (_nj).
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- 1. ترويسة التطبيق وشعار مركز الجمارك الزمنية -->
+        <TextView
+            android:id="@+id/tv_titre_douane_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_main_activity"
+            android:textColor="#38BDF8"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tv_sous_titre_douane_nj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitle_main_activity"
+            android:textColor="#94A3B8"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- حاوية الاستمارة ببطاقة بيضاء أنيقة -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/passport_ticket_bg"
+            android:padding="20dp"
+            android:elevation="4dp">
+
+            <!-- 2. حقل إدخال اسم المسافر -->
+            <TextView
+                android:id="@+id/tv_label_nom_nj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_nom_voyageur"
+                android:textColor="#1E293B"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/et_nom_voyageur_nj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_nom_voyageur"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_border"
+                android:textColor="#0F172A"
+                android:textColorHint="#94A3B8"
+                android:layout_marginBottom="16dp" />
+
+            <!-- 3. حقل إدخال سنة الولادة -->
+            <TextView
+                android:id="@+id/tv_label_naissance_nj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_annee_naissance"
+                android:textColor="#1E293B"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/et_annee_naissance_nj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_annee_naissance"
+                android:inputType="number"
+                android:maxLength="4"
+                android:background="@drawable/edit_text_border"
+                android:textColor="#0F172A"
+                android:textColorHint="#94A3B8"
+                android:layout_marginBottom="16dp" />
+
+            <!-- 4. حقل إدخال سنة الوجهة -->
+            <TextView
+                android:id="@+id/tv_label_destination_nj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_annee_destination"
+                android:textColor="#1E293B"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/et_annee_destination_nj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_annee_destination"
+                android:inputType="number"
+                android:maxLength="4"
+                android:background="@drawable/edit_text_border"
+                android:textColor="#0F172A"
+                android:textColorHint="#94A3B8"
+                android:layout_marginBottom="16dp" />
+
+            <!-- 5. قائمة دافع السفر عبر الزمن (Tourisme, Modification du passé, Fuite) -->
+            <TextView
+                android:id="@+id/tv_label_motif_nj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_motif_voyage"
+                android:textColor="#1E293B"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <Spinner
+                android:id="@+id/sp_motif_voyage_nj"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:entries="@array/motifs_voyage_array"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginBottom="24dp" />
+
+            <!-- 6. زر فحص الملف والانتقال إلى النشاط 2 -->
+            <Button
+                android:id="@+id/btn_inspecter_profil_nj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_inspecter_profil"
+                android:background="@drawable/btn_gradient_primary"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
