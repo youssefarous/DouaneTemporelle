@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- مظهر زر الرفض وخطر المفارقة (أحمر ناري) -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#80FFFFFF">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="45"
+                android:endColor="#B91C1C"
+                android:startColor="#EF4444" />
+            <corners android:radius="10dp" />
+            <padding
+                android:bottom="12dp"
+                android:left="14dp"
+                android:right="14dp"
+                android:top="12dp" />
+        </shape>
+    </item>
+</ripple>
