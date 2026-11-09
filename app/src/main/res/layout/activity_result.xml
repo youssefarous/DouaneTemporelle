@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    النشاط 3 : الحكم النهائي وقرار العبور (ResultActivity)
+    
+    الخصائص والشروط:
+    1. شاشة بسيطة وأنيقة.
+    2. يتغير لون الخلفية برمجياً حسب القرار: أخضر للموافقة، أحمر للرفض والاعتقال.
+    3. رسالة مخصصة باسم المسافر ("Bon voyage [Nom]" أو "[Nom] est en état d'arrestation temporelle").
+    4. زر "Nouveau voyageur" للعودة إلى MainActivity مع إغلاق الأنشطة السابقة.
+    5. جميع المعرفات (IDs) تنتهي بـ (_nj).
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_racine_verdict_nj"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/verdict_approved_bg">
+
+    <!-- أيقونة تعبيرية للحكم (ختم الموافقة أو علامة الخطر) -->
+    <ImageView
+        android:id="@+id/iv_icone_verdict_nj"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_approved"
+        android:contentDescription="Statut du verdict"
+        android:layout_marginBottom="24dp" />
+
+    <!-- عنوان حالة الحكم -->
+    <TextView
+        android:id="@+id/tv_titre_verdict_nj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verdict_status_approved"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- الرسالة المخصصة باسم المسافر -->
+    <TextView
+        android:id="@+id/tv_message_personnalise_nj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bon voyage !"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="36dp" />
+
+    <!-- زر تسجيل مسافر جديد والعودة إلى البداية -->
+    <Button
+        android:id="@+id/btn_nouveau_voyageur_nj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_nouveau_voyageur"
+        android:background="@drawable/btn_gradient_primary"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:elevation="6dp" />
+
+</LinearLayout>
